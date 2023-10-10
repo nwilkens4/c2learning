@@ -1,0 +1,14 @@
+ header{
+    padding-left: 40%;
+}
+fieldset{
+background-color:#fcfbfa;
+}
+label, input{
+display: inline-block;
+}
+
+label {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}

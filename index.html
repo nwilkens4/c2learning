@@ -12,26 +12,26 @@
 
 <body>
     <fieldset id="C2-Student-Registration">
-        <header>
+        <header id="header">
             <h3>C2 Student Registration</h3>
         </header>
         <form name="stu_guard_info" action="">
             <div class="student-registration">
                 <h4>Student Information</h4>
                 <div class="student-information">
-                    <label for="fname"> First Name:
+                    <label for="fname">First Name:
                         <input type="text">
                     </label>
-                    <label for="minit"> Middle Initial:
+                    <label for="minit">Middle Initial:
                         <input type="text">
                     </label> <br>
-                    <label for="lname"> Last Name:
+                    <label for="lname">Last Name:
                         <input type="text">
                     </label>
-                    <label for="satdate"> SAT Date:
+                    <label for="satdate">SAT Date:
                         <input type="text">
                     </label><br>
-                    <label for="glevel"> Grade Level
+                    <label for="glevel">Grade Level:
                         <input type="text">
                     </label>
                     <label for="dob">DOB:
@@ -59,7 +59,7 @@
         </form>
     </fieldset>
     <fieldset id="Tutor-Registration">
-        <header>
+        <header id="header">
             <h3>Tutor Registration</h3>
         </header>
         <form name="register-tutor-form" action="">
@@ -86,7 +86,7 @@
         </form>
     </fieldset>
     <fieldset id="Assign-books-fset">
-        <header>
+        <header id="header">
             <h3>Book Assignment</h3>
         </header>
         <form name="assign-books-form" action="">
@@ -117,7 +117,7 @@
     </fieldset>
     <fieldset name="tutor-sheet-fset">
         <div name="enrollment-content">
-            <header>
+            <header id="header">
                 <h3>Enrollment (Tutor Sheet)</h3>
             </header>
 
@@ -168,13 +168,14 @@
     </fieldset>
     <fieldset name="student-search-fset">
         <div name="student-search">
-            <header>
+            <header id="header">
                 <h3>Student Search</h3>
             </header>
             <form name="search-name-form" action="">
-                <label for="searchname">
-                    <input type="text" name="enterfname" id="enterfname">
+                <label for="searchname">Enter First Name: 
                 </label>
+                <input type="text" name="enterfname" id="enterfname">
+
                 <input type="button" value="Find" onclick=""><br>
                 <input type="checkbox" name="match-case" id="match-case">Match Case
                 </label>
@@ -183,7 +184,7 @@
                 </label>
                 <input type="reset" value="Cancel"><br>
                 <label for="whole-words">
-                    <input type="checkbox" name="whole-words" id="whole-words">Wholw Words
+                    <input type="checkbox" name="whole-words" id="whole-words">Whole Words
                 </label>
                 <label for="search-backwards">
                     <input type="checkbox" name="search-backwards" id="search-backwards">Search Backwards
