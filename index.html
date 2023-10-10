@@ -116,68 +116,73 @@
         </form>
     </fieldset>
     <fieldset name="tutor-sheet-fset">
-        <div name="enrollment-content">
+        <div class="enrollment-content">
             <header id="header">
                 <h3>Enrollment (Tutor Sheet)</h3>
             </header>
 
-            <label for="sid"> Student ID:
-                <input type="text">
-            </label>
-            <label for="start-time"> Start Time:
-                <input type="text">
-            </label>
-            <label for="date"> Date:
-                <input type="date">
-            </label> <br>
-            <label for="tid"> Tutor ID:
-                <input type="text">
-            </label>
-            <label for="duration"> Duration:
-                <input type="text">
-            </label>
-            <label for="subject"> Subject:
-                <select name="subject" id="subject">
-                    <option value="math">math</option>
-                    <option value="english">english</option>
-                    <option value="compsci">compsci</option>
-                </select></label><br>
-            <label for="confidence"> Confidence:
-                <input type="number" max="10" min="0" value="1">
-            </label>
-            <label for="motivation"> Motivation:
-                <input type="number" max="10" min="0" value="1">
-            </label>
-            <label for="focus"> Focus:
-                <input type="number" max="10" min="0" value="1">
-            </label>
-            <label for="behavior"> Behavior:
-                <input type="number" max="10" min="0" value="1">
-            </label><br>
-            <label for="homework"> Assigned Homework:</label><br>
-            <textarea name="homework-space" id="homework-space" cols="30" rows="10"></textarea><br>
+            <form name="enrollment" action="">
+                <label for="sid"> Student ID:
+                    <input type="text">
+                </label>
+                <label for="start-time"> Start Time:
+                    <input type="text">
+                </label>
+                <label for="date"> Date:
+                    <input type="date">
+                </label> <br>
+                <label for="tid"> Tutor ID:
+                    <input type="text">
+                </label>
+                <label for="duration"> Duration:
+                    <input type="text">
+                </label>
+                <label for="subject"> Subject:
+                    <select name="subject" id="subject">
+                        <option value="math">math</option>
+                        <option value="english">english</option>
+                        <option value="compsci">compsci</option>
+                    </select></label><br>
+                <label for="confidence"> Confidence:
+                    <input type="number" max="10" min="0" value="1">
+                </label>
+                <label for="motivation"> Motivation:
+                    <input type="number" max="10" min="0" value="1">
+                </label>
+                <label for="focus"> Focus:
+                    <input type="number" max="10" min="0" value="1">
+                </label>
+                <label for="behavior"> Behavior:
+                    <input type="number" max="10" min="0" value="1">
+                </label><br>
+                <label for="homework"> Assigned Homework:</label><br>
+                <textarea name="homework-space" id="homework-space" cols="30" rows="10"></textarea><br>
 
 
-            <label for="comments"> Comments:</label><br>
-            <textarea name="homework-space" id="homework-space" cols="30" rows="10"></textarea><br>
+                <label for="comments"> Comments:</label><br>
+                <textarea name="homework-space" id="homework-space" cols="30" rows="10"></textarea><br>
 
-            <input type="button" name="ok" value="OK">
-            <input type="reset" name="cancel" value="Cancel">
+                <input type="button" name="ok" value="OK">
+                <input type="reset" name="cancel" value="Cancel">
+            </form>
 
         </div>
     </fieldset>
     <fieldset name="student-search-fset">
-        <div name="student-search">
+        <div class="student-search">
             <header id="header">
                 <h3>Student Search</h3>
             </header>
             <form name="search-name-form" action="">
-                <label for="searchname">Enter First Name: 
+                <label for="searchname">Enter First Name:
                 </label>
                 <input type="text" name="enterfname" id="enterfname">
 
                 <input type="button" value="Find" onclick=""><br>
-                <input type="checkbox" name="match-case" id="match-case">Match Case
+                </label>
+                <label for="match-case">
+                    <input type="checkbox" name="match-case" id="match-case">Match Case
+
                 </label>
                 <label for="wrap-around">
                     <input type="checkbox" name="wrap-around" id="wrap-around"> Wrap Around
