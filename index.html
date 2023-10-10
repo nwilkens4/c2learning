@@ -54,7 +54,7 @@
                 </div>
             </div>
             <input type="button" name="ok" value="OK">
-            <input type="button" name="cancel" value="Cancel">
+            <input type="reset" name="cancel" value="Cancel">
         </form>
     </fieldset>
     <fieldset id="Tutor-Registration">
@@ -63,7 +63,6 @@
         </header>
         <form name="register-tutor-form" action="">
             <div class="register-tutor">
-                <h4>Student Information</h4>
                 <div class="student-information">
                     <label for="fname"> First Name:
                         <input type="text">
@@ -82,7 +81,37 @@
 
             </div>
             <input type="button" name="ok" value="OK">
-            <input type="button" name="cancel" value="Cancel">
+            <input type="button" name="reset" value="Cancel">
+        </form>
+    </fieldset>
+    <fieldset id="Assign-books-fset">
+        <header>
+            <h3>Book Assignment</h3>
+        </header>
+        <form name="assign-books-form" action="">
+            <div class="assign-books">
+                <div class="book-assignment">
+                    <label for="sid"> Student ID:
+                        <input type="text">
+                    </label><br>
+                    <label for="booktype"> Type of Book:
+                        <select name="booktype" id="booktype">
+                            <option value="math">math</option>
+                            <option value="english">english</option>
+                            <option value="compsci">compsci</option>
+                        </select>
+                    </label><br>
+                    <label for="bookcolor"> Color of Book:
+                        <select name="bookcolor" id="bookcolor">
+                            <option value="#FFC0CB">pink</option>
+                            <option value="#FFFFFF">white</option>
+                        </select>
+                    </label><br>
+                </div>
+
+            </div>
+            <input type="button" name="ok" value="OK">
+            <input type="reset" name="cancel" value="Cancel">
         </form>
     </fieldset>
 
