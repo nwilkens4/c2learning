@@ -82,7 +82,7 @@
 
             </div>
             <input type="button" name="ok" value="OK">
-            <input type="button" name="reset" value="Cancel">
+            <input type="button" name="reset" id="cancel-tutor-reg-btn" value="Cancel">
         </form>
     </fieldset>
     <fieldset id="Assign-books-fset">
@@ -162,8 +162,10 @@
                 <label for="comments"> Comments:</label><br>
                 <textarea name="homework-space" id="homework-space" cols="30" rows="10"></textarea><br>
 
-                <input type="button" name="ok" value="OK">
-                <input type="reset" name="cancel" value="Cancel">
+                <div class="enrollment-buttons">
+                        <input type="button" name="ok" value="OK">
+                        <input type="reset" name="cancel" value="Cancel">
+                </div>
             </form>
 
         </div>
@@ -178,7 +180,7 @@
                 </label>
                 <input type="text" name="enterfname" id="enterfname">
 
-                <input type="button" value="Find" onclick=""><br>
+                <input type="button" value="Find" id="find" onclick=""><br>
                 </label>
                 <label for="match-case">
                     <input type="checkbox" name="match-case" id="match-case">Match Case
@@ -187,7 +189,7 @@
                 <label for="wrap-around">
                     <input type="checkbox" name="wrap-around" id="wrap-around"> Wrap Around
                 </label>
-                <input type="reset" value="Cancel"><br>
+                <input type="reset" value="Cancel" id="cancel"><br>
                 <label for="whole-words">
                     <input type="checkbox" name="whole-words" id="whole-words">Whole Words
                 </label>
